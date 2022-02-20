@@ -1,8 +1,22 @@
 html {
   font-family: "Merriweather", serif;
+  color: #3a3a3a;
+  width: 100%;
+}
+
+body {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather Sans", sans-serif;
+  color: #2c2c2c;
+}
+
+#skills > ul {
+  -webkit-columns: 2;
+          columns: 2;
 }
 /*# sourceMappingURL=style.css.map */
