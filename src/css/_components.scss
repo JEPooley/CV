@@ -1,0 +1,64 @@
+html {
+  font-family: $font-body;
+  color: $colour-font-body;
+  width: 100%;
+}
+
+body {
+  max-width: $width-content;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-title;
+}
+
+h2,
+h3,
+h4 {
+  color: $colour-font-title;
+}
+
+section {
+  margin: 0 0 50px 0;
+}
+
+#skills > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+
+  h3 {
+    margin: 0 0 5px 0;
+  }
+
+  p {
+    max-width: 20em;
+  }
+}
+
+header {
+  height: $height-header;
+  color: $colour-font-hero;
+  display: flex;
+  flex-direction: column;
+  // text-align: center;
+  justify-content: flex-end;
+  background: rgb(211, 0, 63);
+
+
+  h1 {
+    margin: 0;
+  }
+}
+
+header, main, footer {
+  padding: $padding-text;
+}

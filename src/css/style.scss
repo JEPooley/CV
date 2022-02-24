@@ -1,22 +1,2 @@
 @import "./_config";
-
-html {
-    font-family: $font-body;
-    color: $colour-font-body;
-    width: 100%;
-}
-
-body {
-    max-width: $width-content;
-    width: 100%;
-    margin: 0 auto;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: $font-title;
-    color: $colour-font-title;
-}
-
-#skills > ul {
-    columns: 2;
-}
+@import "./_components";
