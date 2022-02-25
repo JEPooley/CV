@@ -23,31 +23,13 @@ h4 {
   color: #444444;
 }
 
+a,
+a:visited {
+  color: #d3003f;
+}
+
 section {
   margin: 0 0 50px 0;
-}
-
-#skills > ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 20px;
-  padding: 0;
-}
-
-#skills > ul h3 {
-  margin: 0 0 5px 0;
-}
-
-#skills > ul p {
-  max-width: 20em;
 }
 
 header {
@@ -70,7 +52,75 @@ header h1 {
   margin: 0;
 }
 
-header, main, footer {
+header,
+main,
+footer {
   padding: 20px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  gap: 1em;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer i {
+  color: #444444;
+  font-size: 1.6rem;
+}
+
+#skills,
+h2 {
+  text-align: center;
+}
+
+#skills ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+
+#skills ul h3 {
+  margin: 0 0 5px 0;
+}
+
+#skills ul p {
+  max-width: 20em;
+}
+
+#skills li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15px;
+  border-radius: 8px;
+  background: rgba(211, 0, 63, 0.02);
 }
 /*# sourceMappingURL=style.css.map */

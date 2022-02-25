@@ -23,25 +23,13 @@ h4 {
   color: $colour-font-title;
 }
 
-section {
-  margin: 0 0 50px 0;
+a,
+a:visited {
+  color: $color-highlight;
 }
 
-#skills > ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 0;
-
-  h3 {
-    margin: 0 0 5px 0;
-  }
-
-  p {
-    max-width: 20em;
-  }
+section {
+  margin: 0 0 50px 0;
 }
 
 header {
@@ -49,16 +37,66 @@ header {
   color: $colour-font-hero;
   display: flex;
   flex-direction: column;
-  // text-align: center;
   justify-content: flex-end;
-  background: rgb(211, 0, 63);
-
+  background: $color-highlight;
 
   h1 {
     margin: 0;
   }
 }
 
-header, main, footer {
+header,
+main,
+footer {
   padding: $padding-text;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+  gap: 1em;
+
+  ul {
+    list-style: none;
+  }
+
+  i {
+    color: $colour-font-title;
+    font-size: 1.6rem;
+  }
+}
+
+#skills,
+h2 {
+  text-align: center;
+}
+
+#skills {
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+
+    h3 {
+      margin: 0 0 5px 0;
+    }
+
+    p {
+      max-width: 20em;
+    }
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    border-radius: 8px;
+    background: $color-highlight-light;
+  }
 }
