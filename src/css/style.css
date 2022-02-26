@@ -33,7 +33,7 @@ section {
 }
 
 header {
-  height: 220px;
+  height: 400px;
   color: rgba(255, 255, 255, 0.95);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,11 +45,24 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #d3003f;
+  gap: 20px;
+  text-align: center;
+}
+
+header img {
+  width: 200px;
 }
 
 header h1 {
   margin: 0;
+}
+
+header p {
+  margin-top: 0px;
 }
 
 header,
@@ -62,6 +75,15 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #d3003f;
+  color: rgba(255, 255, 255, 0.95);
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -71,17 +93,12 @@ footer {
   gap: 1em;
 }
 
-footer ul {
-  list-style: none;
-}
-
-footer i {
-  color: #444444;
+#social i {
+  color: rgba(255, 255, 255, 0.95);
   font-size: 1.6rem;
 }
 
-#skills,
-h2 {
+#skills {
   text-align: center;
 }
 
@@ -100,14 +117,6 @@ h2 {
   padding: 0;
 }
 
-#skills ul h3 {
-  margin: 0 0 5px 0;
-}
-
-#skills ul p {
-  max-width: 20em;
-}
-
 #skills li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,8 +128,57 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 15px;
+  padding: 15px;
   border-radius: 8px;
-  background: rgba(211, 0, 63, 0.02);
+}
+
+#skills li h3 {
+  margin: 0 0 5px 0;
+}
+
+#skills li p {
+  margin: 0;
+  max-width: 20em;
+}
+
+#skills li i {
+  color: #444444;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+hr {
+  height: 2px;
+  border: none;
+  background: #d3003f;
+}
+
+#experience p {
+  background: rgba(211, 0, 63, 0.03);
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#experience article {
+  margin-top: 40px;
+}
+
+#experience img {
+  max-width: 60px;
+  max-height: 40px;
+}
+
+#experience .experience-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
 }
 /*# sourceMappingURL=style.css.map */
