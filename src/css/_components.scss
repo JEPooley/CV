@@ -3,6 +3,7 @@ html {
   color: $colour-font-body;
   width: 100%;
   scroll-behavior: smooth;
+  background: $color-highlight-light;
 }
 
 body {
@@ -16,6 +17,10 @@ h2,
 h3,
 h4 {
   font-family: $font-title;
+}
+
+main {
+  background: white;
 }
 
 h2,
@@ -68,6 +73,7 @@ header {
 
   p {
     margin-top: 0px;
+    max-width: 30rem;
   }
 
   i {
@@ -111,7 +117,14 @@ footer {
   }
 }
 
+
 #skills {
+  
+  h2 {
+    margin-top: 0;
+    padding-top: 20px;
+  }
+  
   #skills-container {
     text-align: center;
     list-style: none;
@@ -188,3 +201,44 @@ ul {
     gap: 10px;
   }
 }
+
+@media screen and (min-width: $width-content) {
+  header, main, footer {
+    padding: 80px;
+  }
+
+  body {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  header {
+    height: $height-header;
+    text-align: left;
+    align-items: flex-start;
+    
+    a {
+      display: none;
+    }
+
+    img {
+      width: 130px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  #skills{
+
+    #skills-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px 20px;
+    }
+
+    .skills-card:last-child {
+      grid-column: 1 / 4;
+    }
+  }
+  }

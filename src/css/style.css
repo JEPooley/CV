@@ -3,6 +3,7 @@ html {
   color: #242424;
   width: 100%;
   scroll-behavior: smooth;
+  background: rgba(211, 0, 63, 0.03);
 }
 
 body {
@@ -16,6 +17,10 @@ h2,
 h3,
 h4 {
   font-family: "Merriweather Sans", sans-serif;
+}
+
+main {
+  background: white;
 }
 
 h2,
@@ -58,7 +63,7 @@ section {
 }
 
 header {
-  min-height: 400px;
+  min-height: 500px;
   height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -91,6 +96,7 @@ header h1 {
 
 header p {
   margin-top: 0px;
+  max-width: 30rem;
 }
 
 header i {
@@ -145,6 +151,11 @@ footer {
 #social i {
   color: rgba(255, 255, 255, 0.9);
   font-size: 1.6rem;
+}
+
+#skills h2 {
+  margin-top: 0;
+  padding-top: 20px;
 }
 
 #skills #skills-container {
@@ -239,5 +250,43 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  header, main, footer {
+    padding: 80px;
+  }
+  body {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  header {
+    height: 500px;
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header a {
+    display: none;
+  }
+  header img {
+    width: 130px;
+  }
+  header p {
+    margin: 0;
+  }
+  #skills #skills-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 20px;
+  }
+  #skills .skills-card:last-child {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+  }
 }
 /*# sourceMappingURL=style.css.map */
