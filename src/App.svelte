@@ -1,6 +1,5 @@
 <script>
   // Imports
-  import NavBar from "./components/NavBar.svelte";
 </script>
 
 <svelte:head>
@@ -17,38 +16,67 @@
 </svelte:head>
 
 <main>
-  <NavBar />
+  <aside>
+    <img class="headshot" src="./images/josh-3.png" alt="">
+  </aside>
+
+  <div id="main-text">
+    <h1>Dr Josh Pooley</h1>
+    <p id="subtitle">Data Scientist | Developer | Prototyper</p>
+  </div>
 </main>
 
 <style>
-  main {
-    width: 800px;
-    height: 500px;
-    background-color: rgb(83, 83, 83);
-    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.6);
-    border-radius: 8px;
-    box-sizing: border-box;
-  }
-
   :global(body),
   :global(html) {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    background: rgb(44, 44, 44);
+    background: rgb(49, 49, 49);
   }
 
   :global(body) {
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-family: "Source Sans Pro", sans-serif;
-    color: rgb(218, 218, 218);
+    padding: 40px 0;
   }
 
-  :global(h1),
-  :global(h2) {
+  main {
+    width: 100%;
+    max-width: 740px;
+    background: white;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.205);
+    border-radius: 5px;
+    display: flex;
+  }
+
+  aside {
+    width: 220px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.082);
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headshot {
+    width: 155px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 30px;
+  }
+
+  #main-text {
+    padding: 30px;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  #subtitle {
     margin: 0;
   }
 </style>
