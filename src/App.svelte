@@ -27,9 +27,9 @@
       <SkillSet />
       <h2>Some Experience with</h2>
       <ul
-        style="culumns: 2;
-        -webkit-culumns: 2;
-        -moz-culumns: 2;"
+        style="columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;"
       >
         <li>MS Azure</li>
         <li>Docker</li>
