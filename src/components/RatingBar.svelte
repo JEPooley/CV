@@ -1,10 +1,11 @@
 <script>
   // Imports
-  import { bounceOut } from "svelte/easing";
+  import { cubicOut } from "svelte/easing";
   import { onMount } from "svelte";
 
   // Props
   export let rating; // 0-100
+  export let delay = 500;
 
   // Init
   let ready = false;
@@ -16,7 +17,7 @@
       duration,
       delay,
       css: (t) => {
-        const eased = bounceOut(t);
+        const eased = cubicOut(t);
         return `transform: scaleX(${eased});`;
       },
     };
@@ -26,7 +27,7 @@
 <div class="container">
   {#if ready}
     <div
-      in:slideBounce={{ duration: 1000, delay: 750 }}
+      in:slideBounce={{ duration: 1500, delay: delay }}
       class="rating"
       style="--width:{rating}%"
     />

@@ -5,24 +5,19 @@
   // Props
   export let name;
   export let rating;
+  export let delay;
 
 </script>
 
 <div>
   <h4>{name}</h4>
-  <RatingBar {rating} />
+  <RatingBar {rating} {delay}/>
 </div>
 <div >
     <slot></slot>
 </div>
 
 <style>
-    p {
-        margin-top: 0;
-        margin-bottom: 8px;
-        display: none;
-    }
-
     h4 {
         margin-bottom: 5px;
     }

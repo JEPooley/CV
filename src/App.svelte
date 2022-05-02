@@ -2,20 +2,16 @@
   // Imports
   import ExperienceTag from "./components/ExperienceTag.svelte";
   import HighlightText from "./components/HighlightText.svelte";
-  import Icon from "./components/Icon.svelte";
-  import Skill from "./components/Skill.svelte";
+  import ContactSet from "./components/ContactSet.svelte";
+  import SkillSet from "./components/SkillSet.svelte";
 </script>
 
 <svelte:head>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
     rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,200"
   />
   <script
     src="https://kit.fontawesome.com/f5272181b3.js"
@@ -25,50 +21,15 @@
 <main>
   <aside>
     <img class="headshot" src="./images/josh-3.png" alt="" />
-    <div id="contact">
-      <Icon
-        className="fa-brands fa-linkedin"
-        href="https://www.linkedin.com/in/josh-pooley/"
-      />
-      <Icon
-        className="fa-brands fa-github"
-        href="https://github.com/JEPooley"
-      />
-      <Icon
-        className="fa fa-envelope"
-        href="joshpooley93@gmail.com"
-        mailto={true}
-      />
-    </div>
-    <div id="aside-text">
+    <ContactSet />
+    <section>
       <h2>Core Skills</h2>
-      <Skill name="Python Development" rating="90">
-        Numpy, Pandas, Git, pytest, Flask, Matplotlib, OOP
-      </Skill>
-      <Skill name="Prototyping" rating="80">
-        Creative Problem Solving, Human-Centered Design, Collaborative Working
-      </Skill>
-      <Skill name="Front-End Development" rating="75">
-        HTML5, CSS/SCSS, Vanilla JS, Leaflet, Svelte
-      </Skill>
-      <Skill name="Writing" rating="75"
-        >Papers, Reports, Blogs, Patents, LaTeX</Skill
-      >
-      <Skill name="Geospatial Analysis" rating="70">
-        GeoPandas, Rasterio, QGIS/ArcGIS, Vector Data, Raster Data
-      </Skill>
-      <Skill name="Data Science" rating="65">
-        scikit-learn, scikit-image, NetworkX, AzureML
-      </Skill>
-      <Skill name="Agile Methodologies" rating="60">
-        Scrum Developer, Scrum Master, MS DevOps
-      </Skill>
-
-      <h2>Some Experience with ...</h2>
+      <SkillSet />
+      <h2>Some Experience with</h2>
       <ul
-        style="columns: 2;
-      -webkit-columns: 2;
-      -moz-columns: 2;"
+        style="culumns: 2;
+        -webkit-culumns: 2;
+        -moz-culumns: 2;"
       >
         <li>MS Azure</li>
         <li>Docker</li>
@@ -76,140 +37,156 @@
         <li>Keras</li>
         <li>SQL</li>
       </ul>
-    </div>
+    </section>
   </aside>
 
   <div id="main-text">
-    <h1>Dr Josh Pooley</h1>
+    <h1>Dr Josh Pouley</h1>
     <p id="subtitle">Data Scientist | Developer | Prototyper</p>
     <p>
       I'm a data scientist and prototyper based in the UK, currently
       specialising in geospatial analysis. I love learning about new
-      technologies, being creative and getting stuck in to a new project!
+      technulogies, being creative and getting stuck in to a new project!
     </p>
 
-    <h2>Experience</h2>
-    <div class="indent">
-      <ExperienceTag
-        title="Data Scientist (Rapid Prototyping)"
-        company="Ordnance Survey"
-        date="January 2020 – Present"
-        src="./images/os-logo.png"
-      />
-      <HighlightText>
-        I have been a part of Ordnance Survey's Rapid Prototyping Team sinces
-        its inception in 2020. This role is hugely diverse and I have developed
-        a wide range of skills including Python development, data science, web
-        development, human-centered design, agile development and much more!
-      </HighlightText>
-      <h4>Key Responsibilities</h4>
-      <ul>
-        <li>Python development of prototypes</li>
-        <li>Data science and prototype ML model training</li>
-        <li>Building web apps and interactive demonstrators for prototypes</li>
-        <li>Scrum mastering and technical leadership</li>
-        <li>Geospatial data manipulation and analysis</li>
-        <li>Demonstrating and promoting a culture of innovation</li>
-      </ul>
-      <h4>Acheivements</h4>
+    <section>
+      <h2>Experience</h2>
       <ul>
         <li>
-          Technical lead for the
-          <a target="_blank" href="https://pypi.org/project/osdatahub/"
-            >osdatahub</a
-          >
-          project
+          <ExperienceTag
+            title="Data Scientist (Rapid Prototyping)"
+            company="Ordnance Survey"
+            date="January 2020 – Present"
+            src="./images/os-logo.png"
+          />
+          <HighlightText>
+            I have been a part of Ordnance Survey's Rapid Prototyping Team
+            sinces its inception in 2020. This rule is hugely diverse and I have
+            developed a wide range of skills including Python development, data
+            science, web development, human-centered design, agile development
+            and much more!
+          </HighlightText>
+          <h4>Key Responsibilities</h4>
+          <ul>
+            <li>Python development of prototypes</li>
+            <li>Data science and prototype ML model training</li>
+            <li>
+              Building web apps and interactive demonstrators for prototypes
+            </li>
+            <li>Scrum mastering and technical leadership</li>
+            <li>Geospatial data manipulation and analysis</li>
+            <li>Demonstrating and promoting a culture of innovation</li>
+          </ul>
+          <h4>Acheivements</h4>
+          <ul>
+            <li>
+              Technical lead for the
+              <a target="_blank" href="https://pypi.org/project/osdatahub/"
+                >osdatahub</a
+              >
+              project
+            </li>
+            <li>
+              Technical lead for the
+              <a
+                target="_blank"
+                href="https://labs.os.uk/public/data-hub-explorer/"
+                >OS Data Hub Explorer</a
+              >
+            </li>
+            <li>
+              Technical lead for the
+              <a
+                target="_blank"
+                href="https://lively-beach-0877f1c03.azurestaticapps.net/"
+                >OS Heat Data prototype</a
+              >
+            </li>
+            <li>
+              Presented COVID-19 infection model to the Newton Institute,
+              Cambridge
+            </li>
+          </ul>
+          <h4>Written Work</h4>
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.ordnancesurvey.co.uk/newsroom/blog/driveways-ev-hackathon"
+                >Rapid prototyping: at-home electric vehicle charging</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://python.plainenglish.io/graphic-design-in-python-using-geospatial-data-813e513dc393"
+                >Graphic Design in Python Using Geospatial Data</a
+              >
+            </li>
+          </ul>
         </li>
         <li>
-          Technical lead for the
-          <a target="_blank" href="https://labs.os.uk/public/data-hub-explorer/"
-            >OS Data Hub Explorer</a
-          >
-        </li>
-        <li>
-          Technical lead for the
-          <a
-            target="_blank"
-            href="https://lively-beach-0877f1c03.azurestaticapps.net/"
-            >OS Heat Data prototype</a
-          >
-        </li>
-        <li>
-          Presented COVID-19 infection model to the Newton Institute, Cambridge
+          <ExperienceTag
+            title="Post-Graduate Researcher"
+            company="University of Southampton"
+            date="September 2015 – December 2019"
+            src="./images/soton-logo.jpg"
+          />
+          <HighlightText>
+            My post-graduate research was focussed on the development of
+            high-speed sensors for deployment in harsh envionments. The work was
+            a mixture of practical lab-based experimentation, computer modelling
+            and writing research papers.
+          </HighlightText>
+          <h4>Key Responsibilities</h4>
+          <ul>
+            <li>Designing and testing fibre optic sensor systems</li>
+            <li>Fabricating fibre Bragg gratings</li>
+            <li>
+              Demonstrating experimental physics to undergraduate students
+            </li>
+            <li>Writing research papers</li>
+          </ul>
+          <h4>Acheivements</h4>
+          <ul>
+            <li>Awarded doctorate for work on fibre optic sensing</li>
+            <li>Successfully published three research papers</li>
+          </ul>
+          <h4>Written Work</h4>
+          <ul>
+            <li>
+              <a target="_blank" href="https://eprints.soton.ac.uk/438653/"
+                >Fibre optic methods for measuring detonation velocity</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-27-16-23464&amp;id=416379"
+                >Detonation velocity measurements with uniform fibre Bragg
+                gratings</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="https://www.mdpi.com/1424-8220/19/7/1697"
+                >Detonation velocity measurements using rare-earth doped fibres</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.mdpi.com/1424-8220/19/15/3333"
+                >Optimised chirped fibre Bragg gratings for detonation velocity
+                measurements</a
+              >
+            </li>
+          </ul>
         </li>
       </ul>
-      <h4>Written Work</h4>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://www.ordnancesurvey.co.uk/newsroom/blog/driveways-ev-hackathon"
-            >Rapid prototyping: at-home electric vehicle charging</a
-          >
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://python.plainenglish.io/graphic-design-in-python-using-geospatial-data-813e513dc393"
-            >Graphic Design in Python Using Geospatial Data</a
-          >
-        </li>
-      </ul>
-      <br />
-      <ExperienceTag
-        title="Post-Graduate Researcher"
-        company="University of Southampton"
-        date="September 2015 – December 2019"
-        src="./images/soton-logo.jpg"
-      />
-      <HighlightText>
-        My post-graduate research was focussed on the development of high-speed
-        sensors for deployment in harsh envionments. The work was a mixture of
-        practical lab-based experimentation, computer modelling and writing
-        research papers.
-      </HighlightText>
-      <h4>Key Responsibilities</h4>
-      <ul>
-        <li>Designing and testing fibre optic sensor systems</li>
-        <li>Fabricating fibre Bragg gratings</li>
-        <li>Demonstrating experimental physics to undergraduate students</li>
-        <li>Writing research papers</li>
-      </ul>
-      <h4>Acheivements</h4>
-      <ul>
-        <li>Awarded doctorate for work on fibre optic sensing</li>
-        <li>Successfully published three research papers</li>
-      </ul>
-      <h4>Written Work</h4>
-      <ul>
-        <li>
-          <a target="_blank" href="https://eprints.soton.ac.uk/438653/"
-            >Fibre optic methods for measuring detonation velocity</a
-          >
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-27-16-23464&amp;id=416379"
-            >Detonation velocity measurements with uniform fibre Bragg gratings</a
-          >
-        </li>
-        <li>
-          <a target="_blank" href="https://www.mdpi.com/1424-8220/19/7/1697"
-            >Detonation velocity measurements using rare-earth doped fibres</a
-          >
-        </li>
-        <li>
-          <a target="_blank" href="https://www.mdpi.com/1424-8220/19/15/3333"
-            >Optimised chirped fibre Bragg gratings for detonation velocity
-            measurements</a
-          >
-        </li>
-      </ul>
-    </div>
+    </section>
 
-    <h2>Education</h2>
-    <div class="indent">
+    <section>
+      <h2>Education</h2>
       <ul>
         <li>
           <b>PhD in Optoelectronics</b> -
@@ -227,11 +204,11 @@
           <b>A-Levels</b> - Maths (A*), Physics (A), P.E. (A), English Lit. AS
           (B) -
           <a target="_blank" href="https://www.thekings.devon.sch.uk/"
-            >The King's School, Ottery St Mary</a
+            >The King's Schoul, Ottery St Mary</a
           >
         </li>
       </ul>
-    </div>
+    </section>
   </div>
 </main>
 
@@ -243,6 +220,21 @@
     width: 100%;
     height: 100%;
     background: rgb(49, 49, 49);
+
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  :global(h1) {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  :global(h2),
+  :global(h3),
+  :global(h4) {
+    font-weight: 600;
   }
 
   :global(body) {
@@ -263,28 +255,25 @@
 
   aside {
     width: 500px;
-    background-color: rgba(0, 0, 0, 0.082);
+    background-color: rgba(0, 0, 0, 0.04);
     border-radius: 5px 0 0 5px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
   }
 
-  #aside-text {
-    width: 100%;
-    padding: 30px;
-    box-sizing: border-box;
+  :global(section) {
+    margin-top: 45px;
   }
 
   .headshot {
-    width: 155px;
+    width: 100%;
     border-radius: 10px;
     box-sizing: border-box;
-    margin: 30px 30px 10px 30px;
   }
 
   #main-text {
-    padding: 30px;
+    padding: 75px 50px 40px 30px;
     width: 100%;
   }
 
