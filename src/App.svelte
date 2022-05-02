@@ -41,7 +41,7 @@
   </aside>
 
   <div id="main-text">
-    <h1>Dr Josh Pouley</h1>
+    <h1>Dr Josh Pooley</h1>
     <p id="subtitle">Data Scientist | Developer | Prototyper</p>
     <p>
       I'm a data scientist and prototyper based in the UK, currently
