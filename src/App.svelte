@@ -46,7 +46,7 @@
     <p>
       I'm a data scientist and prototyper based in the UK, currently
       specialising in geospatial analysis. I love learning about new
-      technulogies, being creative and getting stuck in to a new project!
+      technologies, being creative and getting stuck in to a new project!
     </p>
 
     <section>
@@ -61,7 +61,7 @@
           />
           <HighlightText>
             I have been a part of Ordnance Survey's Rapid Prototyping Team
-            sinces its inception in 2020. This rule is hugely diverse and I have
+            sinces its inception in 2020. This role is hugely diverse and I have
             developed a wide range of skills including Python development, data
             science, web development, human-centered design, agile development
             and much more!
@@ -204,7 +204,7 @@
           <b>A-Levels</b> - Maths (A*), Physics (A), P.E. (A), English Lit. AS
           (B) -
           <a target="_blank" href="https://www.thekings.devon.sch.uk/"
-            >The King's Schoul, Ottery St Mary</a
+            >The King's School, Ottery St Mary</a
           >
         </li>
       </ul>
