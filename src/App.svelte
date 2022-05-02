@@ -2,6 +2,7 @@
   // Imports
   import ExperienceTag from "./components/ExperienceTag.svelte";
   import HighlightText from "./components/HighlightText.svelte";
+  import Icon from "./components/Icon.svelte";
 
   // Props
   export let themeColor;
@@ -18,11 +19,32 @@
     rel="stylesheet"
     href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,200"
   />
+  <script
+    src="https://kit.fontawesome.com/f5272181b3.js"
+    crossorigin="anonymous"></script>
 </svelte:head>
 
 <main>
   <aside>
     <img class="headshot" src="./images/josh-3.png" alt="" />
+    <div id="contact">
+      <Icon
+        className="fa-brands fa-linkedin"
+        href="https://www.linkedin.com/in/josh-pooley/"
+      />
+      <Icon
+        className="fa-brands fa-github"
+        href="https://github.com/JEPooley"
+      />
+      <Icon
+        className="fa fa-envelope"
+        href="joshpooley93@gmail.com"
+        mailto={true}
+      />
+    </div>
+    <div id="aside-text">
+      <h2>Skills</h2>
+    </div>
   </aside>
 
   <div id="main-text">
@@ -35,17 +57,17 @@
     </p>
 
     <h2>Experience</h2>
-    <div id="experience">
+    <div class="indent">
       <ExperienceTag
         title="Data Scientist (Rapid Prototyping)"
         company="Ordnance Survey"
         date="January 2020 – Present"
-        src="./images/josh-3.png"
+        src="./images/os-logo.png"
       />
       <HighlightText>
-        I have been a part of Ordnance Survey's Rapid Prototyping Team sinces its
-        inception in 2020. This role is hugely diverse and I have developed a wide
-        range of skills including Python development, data science, web
+        I have been a part of Ordnance Survey's Rapid Prototyping Team sinces
+        its inception in 2020. This role is hugely diverse and I have developed
+        a wide range of skills including Python development, data science, web
         development, human-centered design, agile development and much more!
       </HighlightText>
       <h4>Key Responsibilities</h4>
@@ -101,12 +123,12 @@
           >
         </li>
       </ul>
-      <br>
+      <br />
       <ExperienceTag
         title="Post-Graduate Researcher"
         company="University of Southampton"
         date="September 2015 – December 2019"
-        src="./images/josh-3.png"
+        src="./images/soton-logo.jpg"
       />
       <HighlightText>
         My post-graduate research was focussed on the development of high-speed
@@ -153,6 +175,31 @@
         </li>
       </ul>
     </div>
+
+    <h2>Education</h2>
+    <div class="indent">
+      <ul>
+        <li>
+          <b>PhD in Optoelectronics</b> -
+          <a target="_blank" href="https://www.zeplerinstitute.ac.uk/"
+            >Zepler Institute, University of Southampton</a
+          >
+        </li>
+        <li>
+          <b>Masters Degree in Physics</b> - First Class Honours -
+          <a target="_blank" href="https://www.southampton.ac.uk/"
+            >University of Southampton</a
+          >
+        </li>
+        <li>
+          <b>A-Levels</b> - Maths (A*), Physics (A), P.E. (A), English Lit. AS
+          (B) -
+          <a target="_blank" href="https://www.thekings.devon.sch.uk/"
+            >The King's School, Ottery St Mary</a
+          >
+        </li>
+      </ul>
+    </div>
   </div>
 </main>
 
@@ -174,7 +221,7 @@
 
   main {
     width: 100%;
-    max-width: 740px;
+    max-width: 960px;
     background: white;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
     border-radius: 5px;
@@ -189,6 +236,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  #aside-text {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
   }
 
   .headshot {
@@ -210,7 +263,7 @@
     margin: 0;
   }
 
-  #experience {
+  .indent {
     padding-left: 20px;
   }
 </style>
