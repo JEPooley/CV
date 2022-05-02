@@ -3,9 +3,7 @@
   import ExperienceTag from "./components/ExperienceTag.svelte";
   import HighlightText from "./components/HighlightText.svelte";
   import Icon from "./components/Icon.svelte";
-
-  // Props
-  export let themeColor;
+  import Skill from "./components/Skill.svelte";
 </script>
 
 <svelte:head>
@@ -43,7 +41,41 @@
       />
     </div>
     <div id="aside-text">
-      <h2>Skills</h2>
+      <h2>Core Skills</h2>
+      <Skill name="Python Development" rating="90">
+        Numpy, Pandas, Git, pytest, Flask, Matplotlib, OOP
+      </Skill>
+      <Skill name="Prototyping" rating="80">
+        Creative Problem Solving, Human-Centered Design, Collaborative Working
+      </Skill>
+      <Skill name="Front-End Development" rating="75">
+        HTML5, CSS/SCSS, Vanilla JS, Leaflet, Svelte
+      </Skill>
+      <Skill name="Writing" rating="75"
+        >Papers, Reports, Blogs, Patents, LaTeX</Skill
+      >
+      <Skill name="Geospatial Analysis" rating="70">
+        GeoPandas, Rasterio, QGIS/ArcGIS, Vector Data, Raster Data
+      </Skill>
+      <Skill name="Data Science" rating="65">
+        scikit-learn, scikit-image, NetworkX, AzureML
+      </Skill>
+      <Skill name="Agile Methodologies" rating="60">
+        Scrum Developer, Scrum Master, MS DevOps
+      </Skill>
+
+      <h2>Some Experience with ...</h2>
+      <ul
+        style="columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;"
+      >
+        <li>MS Azure</li>
+        <li>Docker</li>
+        <li>Fast API</li>
+        <li>Keras</li>
+        <li>SQL</li>
+      </ul>
     </div>
   </aside>
 
@@ -230,7 +262,7 @@
   }
 
   aside {
-    width: 220px;
+    width: 500px;
     background-color: rgba(0, 0, 0, 0.082);
     border-radius: 5px 0 0 5px;
     display: flex;
@@ -248,11 +280,12 @@
     width: 155px;
     border-radius: 10px;
     box-sizing: border-box;
-    margin: 30px;
+    margin: 30px 30px 10px 30px;
   }
 
   #main-text {
     padding: 30px;
+    width: 100%;
   }
 
   h1 {
