@@ -46,7 +46,7 @@
   .rating {
     width: var(--width);
     height: 100%;
-    background: rgb(44, 44, 44);
+    background: rgb(117, 117, 117);
     transform-origin: center left;
     border-radius: 4px;
     box-shadow: 2px 0 2px #0000003b;

@@ -4,6 +4,7 @@
   import HighlightText from "./components/HighlightText.svelte";
   import ContactSet from "./components/ContactSet.svelte";
   import SkillSet from "./components/SkillSet.svelte";
+  import SubHeading from "./components/SubHeading.svelte";
 </script>
 
 <svelte:head>
@@ -23,9 +24,9 @@
     <img class="headshot" src="./images/josh-3.png" alt="" />
     <ContactSet />
     <section>
-      <h2>Core Skills</h2>
+      <SubHeading>Core Skills</SubHeading>
       <SkillSet />
-      <h2>Some Experience with</h2>
+      <SubHeading>Some Experience with</SubHeading>
       <ul
         style="columns: 2;
         -webkit-columns: 2;
@@ -50,23 +51,20 @@
     </p>
 
     <section>
-      <h2>Experience</h2>
-      <ul>
-        <li>
-          <ExperienceTag
-            title="Data Scientist (Rapid Prototyping)"
-            company="Ordnance Survey"
-            date="January 2020 – Present"
-            src="./images/os-logo.png"
-          />
-          <HighlightText>
-            I have been a part of Ordnance Survey's Rapid Prototyping Team
-            sinces its inception in 2020. This role is hugely diverse and I have
-            developed a wide range of skills including Python development, data
-            science, web development, human-centered design, agile development
-            and much more!
-          </HighlightText>
-          <h4>Key Responsibilities</h4>
+      <SubHeading>Experience</SubHeading>
+      <ExperienceTag
+        title="Data Scientist (Rapid Prototyping)"
+        company="Ordnance Survey"
+        date="January 2020 – Present"
+        src="./images/os-logo.png"
+      />
+      <HighlightText>
+        I have been a part of Ordnance Survey's Rapid Prototyping Team sinces
+        its inception in 2020. This role is hugely diverse and I have developed
+        a wide range of skills including Python development, data science, web
+        development, human-centered design, agile development and much more!
+      </HighlightText>
+      <!-- <h4>Key Responsibilities</h4>
           <ul>
             <li>Python development of prototypes</li>
             <li>Data science and prototype ML model training</li>
@@ -78,67 +76,22 @@
             <li>Demonstrating and promoting a culture of innovation</li>
           </ul>
           <h4>Acheivements</h4>
-          <ul>
-            <li>
-              Technical lead for the
-              <a target="_blank" href="https://pypi.org/project/osdatahub/"
-                >osdatahub</a
-              >
-              project
-            </li>
-            <li>
-              Technical lead for the
-              <a
-                target="_blank"
-                href="https://labs.os.uk/public/data-hub-explorer/"
-                >OS Data Hub Explorer</a
-              >
-            </li>
-            <li>
-              Technical lead for the
-              <a
-                target="_blank"
-                href="https://lively-beach-0877f1c03.azurestaticapps.net/"
-                >OS Heat Data prototype</a
-              >
-            </li>
-            <li>
-              Presented COVID-19 infection model to the Newton Institute,
-              Cambridge
-            </li>
-          </ul>
+          
           <h4>Written Work</h4>
-          <ul>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.ordnancesurvey.co.uk/newsroom/blog/driveways-ev-hackathon"
-                >Rapid prototyping: at-home electric vehicle charging</a
-              >
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://python.plainenglish.io/graphic-design-in-python-using-geospatial-data-813e513dc393"
-                >Graphic Design in Python Using Geospatial Data</a
-              >
-            </li>
-          </ul>
-        </li>
-        <li>
-          <ExperienceTag
-            title="Post-Graduate Researcher"
-            company="University of Southampton"
-            date="September 2015 – December 2019"
-            src="./images/soton-logo.jpg"
-          />
-          <HighlightText>
-            My post-graduate research was focussed on the development of
-            high-speed sensors for deployment in harsh envionments. The work was
-            a mixture of practical lab-based experimentation, computer modelling
-            and writing research papers.
-          </HighlightText>
-          <h4>Key Responsibilities</h4>
+          -->
+      <ExperienceTag
+        title="Post-Graduate Researcher"
+        company="University of Southampton"
+        date="September 2015 – December 2019"
+        src="./images/soton-logo.jpg"
+      />
+      <HighlightText>
+        My post-graduate research was focussed on the development of high-speed
+        sensors for deployment in harsh envionments. The work was a mixture of
+        practical lab-based experimentation, computer modelling and writing
+        research papers.
+      </HighlightText>
+      <!-- <h4>Key Responsibilities</h4>
           <ul>
             <li>Designing and testing fibre optic sensor systems</li>
             <li>Fabricating fibre Bragg gratings</li>
@@ -153,40 +106,11 @@
             <li>Successfully published three research papers</li>
           </ul>
           <h4>Written Work</h4>
-          <ul>
-            <li>
-              <a target="_blank" href="https://eprints.soton.ac.uk/438653/"
-                >Fibre optic methods for measuring detonation velocity</a
-              >
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-27-16-23464&amp;id=416379"
-                >Detonation velocity measurements with uniform fibre Bragg
-                gratings</a
-              >
-            </li>
-            <li>
-              <a target="_blank" href="https://www.mdpi.com/1424-8220/19/7/1697"
-                >Detonation velocity measurements using rare-earth doped fibres</a
-              >
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.mdpi.com/1424-8220/19/15/3333"
-                >Optimised chirped fibre Bragg gratings for detonation velocity
-                measurements</a
-              >
-            </li>
-          </ul>
-        </li>
-      </ul>
+           -->
     </section>
 
     <section>
-      <h2>Education</h2>
+      <SubHeading>Education</SubHeading>
       <ul>
         <li>
           <b>PhD in Optoelectronics</b> -
@@ -209,8 +133,82 @@
         </li>
       </ul>
     </section>
+    <section>
+      <SubHeading>Projects</SubHeading>
+      <ul>
+        <li>
+          Technical lead for the
+          <a target="_blank" href="https://pypi.org/project/osdatahub/"
+            >osdatahub</a
+          >
+          project
+        </li>
+        <li>
+          Technical lead for the
+          <a target="_blank" href="https://labs.os.uk/public/data-hub-explorer/"
+            >OS Data Hub Explorer</a
+          >
+        </li>
+        <li>
+          Technical lead for the
+          <a
+            target="_blank"
+            href="https://lively-beach-0877f1c03.azurestaticapps.net/"
+            >OS Heat Data prototype</a
+          >
+        </li>
+        <li>
+          Presented COVID-19 infection model to the Newton Institute, Cambridge
+        </li>
+      </ul>
+    </section>
+    <section>
+      <SubHeading>Written Work</SubHeading>
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.ordnancesurvey.co.uk/newsroom/blog/driveways-ev-hackathon"
+            >Rapid prototyping: at-home electric vehicle charging</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://python.plainenglish.io/graphic-design-in-python-using-geospatial-data-813e513dc393"
+            >Graphic Design in Python Using Geospatial Data</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://eprints.soton.ac.uk/438653/"
+            >Fibre optic methods for measuring detonation velocity</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-27-16-23464&amp;id=416379"
+            >Detonation velocity measurements with uniform fibre Bragg gratings</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://www.mdpi.com/1424-8220/19/7/1697"
+            >Detonation velocity measurements using rare-earth doped fibres</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://www.mdpi.com/1424-8220/19/15/3333"
+            >Optimised chirped fibre Bragg gratings for detonation velocity
+            measurements</a
+          >
+        </li>
+      </ul>
+    </section>
   </div>
 </main>
+<footer>
+  Design by Josh Pooley 2022
+</footer>
 
 <style>
   :global(body),
@@ -231,7 +229,7 @@
     font-size: 3rem;
   }
 
-  :global(h2),
+  :global(SubHeading),
   :global(h3),
   :global(h4) {
     font-weight: 600;
@@ -239,8 +237,24 @@
 
   :global(body) {
     justify-content: center;
-    padding: 40px 0;
+    padding: 40px 0 0 0;
     height: fit-content;
+  }
+
+  :global(ul) {
+    padding-left: 20px;
+  }
+
+  footer {
+    color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    transition: .6s ease-out;
+  }
+
+  footer:hover {
+    color: white;
   }
 
   main {
@@ -257,9 +271,10 @@
     width: 500px;
     background-color: rgba(0, 0, 0, 0.04);
     border-radius: 5px 0 0 5px;
-    align-items: center;
-    padding: 40px;
+    padding: 70px 40px 40px 40px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
   }
 
   :global(section) {
@@ -267,7 +282,7 @@
   }
 
   .headshot {
-    width: 100%;
+    width: 200px;
     border-radius: 10px;
     box-sizing: border-box;
   }
@@ -285,7 +300,16 @@
     margin: 0;
   }
 
-  .indent {
-    padding-left: 20px;
+  ul {
+    list-style: none;
+  }
+
+  ul li::before {
+    content: "\2022";
+    color: rgb(122, 122, 122);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
   }
 </style>
