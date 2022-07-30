@@ -45,8 +45,8 @@
     <h1>Dr Josh Pooley</h1>
     <p id="subtitle">Data Scientist | Developer | Prototyper</p>
     <p>
-      I'm a data scientist and prototyper based in the UK, currently
-      specialising in geospatial analysis. I love learning about new
+      I'm a data scientist, developer and prototyper based in the UK, currently
+      working in the geospatial industry. I love learning about new
       technologies, being creative and getting stuck in to a new project!
     </p>
 
@@ -59,26 +59,11 @@
         src="./images/os-logo.png"
       />
       <HighlightText>
-        I have been a part of Ordnance Survey's Rapid Prototyping Team sinces
+        I have been a part of Ordnance Survey's Rapid Prototyping Team since
         its inception in 2020. This role is hugely diverse and I have developed
         a wide range of skills including Python development, data science, web
         development, human-centered design, agile development and much more!
       </HighlightText>
-      <!-- <h4>Key Responsibilities</h4>
-          <ul>
-            <li>Python development of prototypes</li>
-            <li>Data science and prototype ML model training</li>
-            <li>
-              Building web apps and interactive demonstrators for prototypes
-            </li>
-            <li>Scrum mastering and technical leadership</li>
-            <li>Geospatial data manipulation and analysis</li>
-            <li>Demonstrating and promoting a culture of innovation</li>
-          </ul>
-          <h4>Acheivements</h4>
-          
-          <h4>Written Work</h4>
-          -->
       <ExperienceTag
         title="Post-Graduate Researcher"
         company="University of Southampton"
@@ -91,22 +76,6 @@
         practical lab-based experimentation, computer modelling and writing
         research papers.
       </HighlightText>
-      <!-- <h4>Key Responsibilities</h4>
-          <ul>
-            <li>Designing and testing fibre optic sensor systems</li>
-            <li>Fabricating fibre Bragg gratings</li>
-            <li>
-              Demonstrating experimental physics to undergraduate students
-            </li>
-            <li>Writing research papers</li>
-          </ul>
-          <h4>Acheivements</h4>
-          <ul>
-            <li>Awarded doctorate for work on fibre optic sensing</li>
-            <li>Successfully published three research papers</li>
-          </ul>
-          <h4>Written Work</h4>
-           -->
     </section>
 
     <section>
@@ -261,7 +230,7 @@
     width: 100%;
     max-width: 960px;
     background: white;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
     border-radius: 5px;
     display: flex;
     margin: 0 auto;
