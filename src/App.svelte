@@ -49,8 +49,10 @@
       <ExperienceTag
         title="Data Scientist (Rapid Prototyping)"
         company="Ordnance Survey"
+        alt="Ordnance Survey Logo"
         date="January 2020 – Present"
         src="./images/os-logo.png"
+        href="https://www.ordnancesurvey.co.uk"
       />
       <HighlightText>
         I have been a part of Ordnance Survey's Rapid Prototyping Team since
@@ -61,8 +63,10 @@
       <ExperienceTag
         title="Post-Graduate Researcher"
         company="University of Southampton"
+        alt="University of Southampton Logo"
         date="September 2015 – December 2019"
         src="./images/soton-logo.jpg"
+        href="https://www.southampton.ac.uk/"
       />
       <HighlightText>
         My post-graduate research was focussed on the development of high-speed
@@ -97,7 +101,7 @@
       </ul>
     </section>
     <section>
-      <SubHeading>Projects</SubHeading>
+      <SubHeading>Project Highlights</SubHeading>
       <ul>
         <li>
           Technical lead for the

@@ -14,7 +14,7 @@
     <img {src} {alt} />
   {/if}
   <div class="text-container">
-    <a {href}>{company}</a>
+    <a target="_blank" {href}>{company}</a>
     {date}
   </div>
 </div>
