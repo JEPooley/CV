@@ -3,7 +3,7 @@
 export const skills = [ // List of contact information
     {
         name: "Python Development",
-        text: "Numpy, Pandas, Git, pytest, Flask, Matplotlib, OOP",
+        text: "Numpy, Pandas, Git, pytest, Flask, Matplotlib, OOP, FastAPI, TDD, Trunk Based Development",
         rating: "90"
     },
     {

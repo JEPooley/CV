@@ -27,16 +27,10 @@
       <SubHeading>Core Skills</SubHeading>
       <SkillSet />
       <SubHeading>Some Experience with</SubHeading>
-      <ul
-        style="columns: 2;
-        -webkit-columns: 2;
-        -moz-columns: 2;"
-      >
-        <li>MS Azure</li>
+      <ul>
+        <li>MS Azure (Web Apps, Serverless Functions)</li>
         <li>Docker</li>
-        <li>Fast API</li>
-        <li>Keras</li>
-        <li>SQL</li>
+        <li>Poetry</li>
       </ul>
     </section>
   </aside>
