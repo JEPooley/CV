@@ -178,6 +178,9 @@
         </li>
       </ul>
     </section>
+    <a id="download" href="./files/CV.pdf"
+      >Download <i class="fa-solid fa-download" /></a
+    >
   </div>
 </main>
 <footer>Design by Josh Pooley 2022</footer>
@@ -218,15 +221,11 @@
   }
 
   footer {
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.6);
     width: 100%;
     text-align: center;
     padding: 40px 0;
     transition: 0.6s ease-out;
-  }
-
-  footer:hover {
-    color: white;
   }
 
   main {
@@ -284,6 +283,24 @@
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+  }
+
+  #download {
+    width: 100%;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    text-align: center;
+    background: rgb(49, 49, 49);
+    transition: color .3s ease-out;
+  }
+
+  #download:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
   }
 
   @media only screen and (max-width: 800px) {
