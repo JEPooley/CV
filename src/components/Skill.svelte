@@ -13,12 +13,16 @@
   <h4>{name}</h4>
   <RatingBar {rating} {delay}/>
 </div>
-<div >
+<div id="details">
     <slot></slot>
 </div>
 
 <style>
     h4 {
         margin-bottom: 5px;
+    }
+
+    #details {
+      max-width: 380px;
     }
 </style>

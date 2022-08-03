@@ -21,8 +21,16 @@
 
 <main>
   <aside>
-    <img class="headshot" src="./images/josh-3.png" alt="" />
-    <ContactSet />
+    <header>
+      <div>
+        <img class="headshot" src="./images/josh-3.png" alt="Josh Pooley" />
+        <h1>Dr Josh Pooley</h1>
+        <p id="subtitle">Data Scientist | Developer | Prototyper</p>
+      </div>
+      <div id="contact">
+        <ContactSet />
+      </div>
+    </header>
     <section>
       <SubHeading>Core Skills</SubHeading>
       <SkillSet />
@@ -30,14 +38,13 @@
       <ul>
         <li>MS Azure (Web Apps, Serverless Functions)</li>
         <li>Docker</li>
-        <li>Poetry</li>
+        <li>PyPI & Poetry</li>
       </ul>
     </section>
   </aside>
 
   <div id="main-text">
-    <h1>Dr Josh Pooley</h1>
-    <p id="subtitle">Data Scientist | Developer | Prototyper</p>
+    <SubHeading>About Me</SubHeading>
     <p>
       I'm a data scientist, developer and prototyper based in the UK, currently
       working in the geospatial industry. I love learning about new
@@ -55,9 +62,9 @@
         href="https://www.ordnancesurvey.co.uk"
       />
       <HighlightText>
-        I have been a part of Ordnance Survey's Rapid Prototyping Team since
-        its inception in 2020. This role is hugely diverse and I have developed
-        a wide range of skills including Python development, data science, web
+        I have been a part of Ordnance Survey's Rapid Prototyping Team since its
+        inception in 2020. This role is hugely diverse and I have developed a
+        wide range of skills including Python development, data science, web
         development, human-centered design, agile development and much more!
       </HighlightText>
       <ExperienceTag
@@ -173,9 +180,7 @@
     </section>
   </div>
 </main>
-<footer>
-  Design by Josh Pooley 2022
-</footer>
+<footer>Design by Josh Pooley 2022</footer>
 
 <style>
   :global(body),
@@ -193,7 +198,7 @@
 
   :global(h1) {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 
   :global(SubHeading),
@@ -217,7 +222,7 @@
     width: 100%;
     text-align: center;
     padding: 40px 0;
-    transition: .6s ease-out;
+    transition: 0.6s ease-out;
   }
 
   footer:hover {
@@ -235,10 +240,10 @@
   }
 
   aside {
-    width: 500px;
+    width: 580px;
     background-color: rgba(0, 0, 0, 0.04);
     border-radius: 5px 0 0 5px;
-    padding: 70px 40px 40px 40px;
+    padding: 40px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -255,8 +260,9 @@
   }
 
   #main-text {
-    padding: 75px 50px 40px 30px;
+    padding: 24px 50px 40px 30px;
     width: 100%;
+    box-sizing: border-box;
   }
 
   h1 {
@@ -278,5 +284,76 @@
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .headshot {
+      width: 220px;
+    }
+
+    main {
+      flex-direction: column;
+      border-radius: 0;
+    }
+
+    aside {
+      width: 100%;
+      background: white;
+      padding: 30px 30px 0 30px;
+    }
+
+    #main-text {
+      padding: 0 30px 30px 30px;
+    }
+
+    section {
+      margin-top: 10px;
+    }
+
+    #contact {
+      padding: 20px 30px;
+      background: rgba(0, 0, 0, 0.04);
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.06) 0%,
+        rgba(0, 0, 0, 0.02) 100%
+      );
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      height: 331px;
+      width: 252px;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+
+    :global(h2) {
+      margin-top: 40px;
+    }
+
+    :global(body) {
+      padding-top: 0;
+    }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    header {
+      display: block;
+      text-align: center;
+    }
+
+    #contact {
+      margin-top: 20px;
+      width: 100%;
+      height: fit-content;
+    }
   }
 </style>
