@@ -37,6 +37,7 @@
 <style>
   .container {
     width: 100%;
+    max-width: 400px;
     height: 12px;
     background: white;
     border-radius: 4px;
