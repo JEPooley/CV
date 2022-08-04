@@ -178,7 +178,7 @@
         </li>
       </ul>
     </section>
-    <a id="download" href="./files/CV.pdf"
+    <a id="download" download href="./files/CV.pdf"
       >Download <i class="fa-solid fa-download" /></a
     >
   </div>
