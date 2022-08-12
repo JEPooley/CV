@@ -17,13 +17,21 @@
   <script
     src="https://kit.fontawesome.com/f5272181b3.js"
     crossorigin="anonymous"></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons//apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons//favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons//favicon-16x16.png" />
+  <link rel="manifest" href="favicons//site.webmanifest" />
+  <link rel="mask-icon" href="favicons//safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
 </svelte:head>
 
 <main>
   <aside>
     <header>
       <div>
-        <img class="headshot" src="./images/josh-3.png" alt="Josh Pooley" />
+        <img class="headshot" src="./images/josh.png" alt="Josh Pooley" />
         <h1>Dr Josh Pooley</h1>
         <p id="subtitle">Data Scientist | Developer | Prototyper</p>
       </div>
@@ -294,7 +302,7 @@
     display: block;
     text-align: center;
     background: rgb(49, 49, 49);
-    transition: color .3s ease-out;
+    transition: color 0.3s ease-out;
   }
 
   #download:hover {
