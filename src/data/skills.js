@@ -13,7 +13,7 @@ export const skills = [ // List of contact information
     },
     {
         name: "Front-End Development",
-        text: "HTML5, CSS/SCSS, Vanilla JS, Leaflet, Svelte, Node",
+        text: "HTML, CSS/SCSS, JavaScript/TypeScript, Leaflet, Svelte, Node",
         rating: "75"
     },
     {
