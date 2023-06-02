@@ -1,7 +1,7 @@
 <script lang="ts">
 	let width: number;
 
-	const mobileBreak = 600;
+	const mobileBreak = 800;
 </script>
 
 <main>

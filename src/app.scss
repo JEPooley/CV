@@ -1,16 +1,51 @@
 /* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
 
-html, body {
-    width: 100%;
-    margin: 0;
+html,
+body {
+	width: 100%;
+	margin: 0;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    padding: 10rem 0;
+	display: flex;
+	justify-content: center;
+	padding: 10rem 0;
 }
 
 .white-svg {
-    filter: invert(100%);
+	filter: invert(100%);
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.img-title,
+.img-li {
+	display: flex;
+	align-items: center;
+	gap: $gap-s;
+}
+
+.img-title {
+	img {
+		width: $icon-width-l;
+	}
+}
+
+.img-li {
+	img {
+		width: $icon-width-s;
+	}
+
+	margin: $gap-m 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	text-transform: uppercase;
 }

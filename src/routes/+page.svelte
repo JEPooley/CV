@@ -13,28 +13,28 @@
 
 		<section style="order: 2" class="contact">
 			<ul>
-				<li>
+				<li class="img-li">
 					<img class="white-svg" src="icons/location-dot-solid.svg" alt="Location Pin" />Winchester,
 					UK
 				</li>
-				<li>
+				<li class="img-li">
 					<img
 						class="white-svg"
 						src="icons/envelope-solid.svg"
 						alt="Envelope"
 					/>joshpooley93@gmail.com
 				</li>
-				<li>
+				<li class="img-li">
 					<img class="white-svg" src="icons/github.svg" alt="GitHub Logo" />github.com/JEPooley
 				</li>
-				<li>
+				<li class="img-li">
 					<img
 						class="white-svg"
 						src="icons/linkedin.svg"
 						alt="LinkedIn Logo"
 					/>linkedin.com/in/josh-pooley
 				</li>
-				<li>
+				<li class="img-li">
 					<img class="white-svg" src="icons/link-solid.svg" alt="Link Icon" />jepooley.github.io/cv/
 				</li>
 			</ul>
@@ -140,8 +140,10 @@
 		</section>
 
 		<section style="order: 10" class="extras">
-			<img class="white-svg" src="icons/lock-solid.svg" alt="Lock Icon" />
-			<p>Security Clearence (SC level)</p>
+			<div class="img-title">
+				<img class="white-svg" src="icons/lock-solid.svg" alt="Lock Icon" />
+				<h4>Security Clearence (SC level)</h4>
+			</div>
 		</section>
 	</svelte:fragment>
 
