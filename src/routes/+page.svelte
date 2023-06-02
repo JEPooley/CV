@@ -14,19 +14,19 @@
 		<section class="contact">
 			<ul>
 				<li>
-					<img src="" alt="" />Winchester, UK
+					<img src="icons/location-dot-solid.svg" alt="Location Pin" />Winchester, UK
 				</li>
 				<li>
-					<img src="" alt="" />joshpooley93@gmail.com
+					<img src="icons/envelope-solid.svg" alt="Envelope" />joshpooley93@gmail.com
 				</li>
 				<li>
-					<img src="" alt="" />github.com/JEPooley
+					<img src="icons/github.svg" alt="GitHub Logo" />github.com/JEPooley
 				</li>
 				<li>
-					<img src="" alt="" />linkedin.com/in/josh-pooley
+					<img src="icons/linkedin.svg" alt="LinkedIn Logo" />linkedin.com/in/josh-pooley
 				</li>
 				<li>
-					<img src="" alt="" />jepooley.github.io/cv/
+					<img src="icons/link-solid.svg" alt="Link Icon" />jepooley.github.io/cv/
 				</li>
 			</ul>
 		</section>
@@ -103,14 +103,14 @@
 			<ul>
 				<li>
 					<div class="img-title">
-						<img src="" alt="" />
+						<img src="icons/kitchen-set-solid.svg" alt="Kitchen Icon" />
 						<h4>Cooking</h4>
 					</div>
 					<p>Passionate home cook and keen advocate of pineapple on pizza.</p>
 				</li>
 				<li>
 					<div class="img-title">
-						<img src="" alt="" />
+						<img src="icons/guitar-solid.svg" alt="Guitar Icon" />
 						<h4>Music</h4>
 					</div>
 					<p>
@@ -119,7 +119,7 @@
 				</li>
 				<li>
 					<div class="img-title">
-						<img src="" alt="" />
+						<img src="icons/shoe-prints-solid.svg" alt="Footprints Icon" />
 						<h4>Walking</h4>
 					</div>
 					<p>
@@ -131,7 +131,7 @@
 		</section>
 
 		<section class="extras">
-			<img src="" alt="" />
+			<img src="icons/lock-solid.svg" alt="Lock Icon" />
 			<p>Security Clearence (SC level)</p>
 		</section>
 	</svelte:fragment>
@@ -148,7 +148,7 @@
 			<ul>
 				<li>
 					<div class="job-title">
-						<img src="" alt="" />
+						<img src="icons/ordnance-survey-logo.svg" alt="Ordnance Survey Logo" />
 						<div>
 							<h4>Data Scientist</h4>
 							<p>Jan 2020 – Present</p>
@@ -165,7 +165,7 @@
 				</li>
 				<li>
 					<div class="job-title">
-						<img src="" alt="" />
+						<img src="icons/soton-logo.svg" alt="University of Southampton Logo" />
 						<div>
 							<h4>Post-Graduate</h4>
 							<p>Sep 2015 – Dec 2019</p>
@@ -187,7 +187,7 @@
 			<ul>
 				<li>
 					<div class="img-title">
-						<img src="" alt="" />
+						<img src="icons/python-logo.png" alt="Python Logo" />
 						<h4>Python Developer</h4>
 					</div>
 					<p>
@@ -198,7 +198,7 @@
 				</li>
 				<li>
 					<div class="img-title">
-						<img src="" alt="" />
+						<img src="icons/svelte-logo.png" alt="Svelte Logo" />
 						<h4>Frontend Developer</h4>
 					</div>
 					<p>
@@ -209,7 +209,7 @@
 				</li>
 				<li>
 					<div class="img-title">
-						<img src="" alt="" />
+						<img src="icons/azure-logo.png" alt="MS Azure Logo" />
 						<h4>Cloud Developer</h4>
 					</div>
 					<p>
@@ -220,7 +220,7 @@
 				</li>
 				<li>
 					<div class="img-title">
-						<img src="" alt="" />
+						<img src="icons/git-logo.png" alt="Git Logo" />
 						<h4>Software Engineer</h4>
 					</div>
 					<p>
@@ -230,7 +230,7 @@
 				</li>
 				<li>
 					<div class="img-title">
-						<img src="" alt="" />
+						<img src="icons/azureml-logo.png" alt="AzureML Logo" />
 						<h4>Data Scientist</h4>
 					</div>
 					<p>
@@ -241,7 +241,7 @@
 				</li>
 				<li>
 					<div class="img-title">
-						<img src="" alt="" />
+						<img src="icons/geopandas-logo.png" alt="Geopandas Logo" />
 						<h4>Geospatial Specialist</h4>
 					</div>
 					<p>
