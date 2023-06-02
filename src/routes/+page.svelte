@@ -4,34 +4,43 @@
 
 <Columns>
 	<svelte:fragment slot="left">
-		<header>
+		<header style="order: 0">
 			<h1>
 				Josh <br /> Pooley
 			</h1>
 			<h2>Data Scientist | Developer</h2>
 		</header>
 
-		<section class="contact">
+		<section style="order: 2" class="contact">
 			<ul>
 				<li>
-					<img src="icons/location-dot-solid.svg" alt="Location Pin" />Winchester, UK
+					<img class="white-svg" src="icons/location-dot-solid.svg" alt="Location Pin" />Winchester,
+					UK
 				</li>
 				<li>
-					<img src="icons/envelope-solid.svg" alt="Envelope" />joshpooley93@gmail.com
+					<img
+						class="white-svg"
+						src="icons/envelope-solid.svg"
+						alt="Envelope"
+					/>joshpooley93@gmail.com
 				</li>
 				<li>
-					<img src="icons/github.svg" alt="GitHub Logo" />github.com/JEPooley
+					<img class="white-svg" src="icons/github.svg" alt="GitHub Logo" />github.com/JEPooley
 				</li>
 				<li>
-					<img src="icons/linkedin.svg" alt="LinkedIn Logo" />linkedin.com/in/josh-pooley
+					<img
+						class="white-svg"
+						src="icons/linkedin.svg"
+						alt="LinkedIn Logo"
+					/>linkedin.com/in/josh-pooley
 				</li>
 				<li>
-					<img src="icons/link-solid.svg" alt="Link Icon" />jepooley.github.io/cv/
+					<img class="white-svg" src="icons/link-solid.svg" alt="Link Icon" />jepooley.github.io/cv/
 				</li>
 			</ul>
 		</section>
 
-		<section class="qualifications">
+		<section style="order: 3" class="qualifications">
 			<h3>Qualifications</h3>
 			<ul>
 				<li>
@@ -43,7 +52,7 @@
 			</ul>
 		</section>
 
-		<section class="projects">
+		<section style="order: 7" class="projects">
 			<h3>Projects</h3>
 			<ul>
 				<li>
@@ -71,7 +80,7 @@
 			</ul>
 		</section>
 
-		<section class="publications">
+		<section style="order: 8" class="publications">
 			<h3>Publications</h3>
 			<ul>
 				<li>
@@ -98,19 +107,19 @@
 			</ul>
 		</section>
 
-		<section class="interests">
+		<section style="order: 9" class="interests">
 			<h3>Interests</h3>
 			<ul>
 				<li>
 					<div class="img-title">
-						<img src="icons/kitchen-set-solid.svg" alt="Kitchen Icon" />
+						<img class="white-svg" src="icons/kitchen-set-solid.svg" alt="Kitchen Icon" />
 						<h4>Cooking</h4>
 					</div>
 					<p>Passionate home cook and keen advocate of pineapple on pizza.</p>
 				</li>
 				<li>
 					<div class="img-title">
-						<img src="icons/guitar-solid.svg" alt="Guitar Icon" />
+						<img class="white-svg" src="icons/guitar-solid.svg" alt="Guitar Icon" />
 						<h4>Music</h4>
 					</div>
 					<p>
@@ -119,7 +128,7 @@
 				</li>
 				<li>
 					<div class="img-title">
-						<img src="icons/shoe-prints-solid.svg" alt="Footprints Icon" />
+						<img class="white-svg" src="icons/shoe-prints-solid.svg" alt="Footprints Icon" />
 						<h4>Walking</h4>
 					</div>
 					<p>
@@ -130,20 +139,20 @@
 			</ul>
 		</section>
 
-		<section class="extras">
-			<img src="icons/lock-solid.svg" alt="Lock Icon" />
+		<section style="order: 10" class="extras">
+			<img class="white-svg" src="icons/lock-solid.svg" alt="Lock Icon" />
 			<p>Security Clearence (SC level)</p>
 		</section>
 	</svelte:fragment>
 
 	<svelte:fragment slot="right">
-		<section class="summary">
+		<section style="order: 1" class="summary">
 			I'm a data scientist, developer and prototyper based in the UK, currently working in the
 			geospatial industry. I love learning about new technologies, being creative and getting stuck
 			in to a new project!
 		</section>
 
-		<section class="experience">
+		<section style="order: 4" class="experience">
 			<h3>Experience</h3>
 			<ul>
 				<li>
@@ -182,7 +191,7 @@
 			</ul>
 		</section>
 
-		<section class="technical-skills">
+		<section style="order: 5" class="technical-skills">
 			<h3>Technical Skills</h3>
 			<ul>
 				<li>
@@ -253,7 +262,7 @@
 			</ul>
 		</section>
 
-		<section class="professional-skills">
+		<section style="order: 6" class="professional-skills">
 			<h3>Professional Skills</h3>
 			<ul>
 				<li>
@@ -300,58 +309,9 @@
 </Columns>
 
 <style lang="scss">
-	header {
-		background: yellow;
-		order: 0;
-	}
-
 	section,
 	header {
 		padding: 2rem;
 		box-sizing: border-box;
-	}
-
-	.header {
-		order: 0;
-	}
-
-	.summary {
-		order: 1;
-	}
-
-	.contact {
-		order: 2;
-	}
-
-	.qualifications {
-		order: 3;
-	}
-
-	.experience {
-		order: 4;
-	}
-
-	.technical-skills {
-		order: 5;
-	}
-
-	.professional-skills {
-		order: 6;
-	}
-
-	.projects {
-		order: 7;
-	}
-
-	.publications {
-		order: 8;
-	}
-
-	.interests {
-		order: 9;
-	}
-
-	.extras {
-		order: 10;
 	}
 </style>
