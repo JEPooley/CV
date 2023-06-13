@@ -1,19 +1,125 @@
 /* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
 
+// Dark Mode
+
+@at-root {
+	body#{&} {
+		background: $green-dark;
+	}
+}
+
+h1,
+h3,
+h4,
+p,
+li,
+a {
+	color: $neutral-light;
+	transition: color $transition-time ease-in-out;
+}
+
+main {
+	background: $green-extra-dark;
+}
+
+section {
+	background: $green-dark;
+}
+
+.svg {
+	filter: invert(100%);
+}
+
+.job-title>p{
+	background: $neutral-light;
+	color: $green-extra-dark;
+}
+
+// Light Mode
+
+.light {
+	@at-root {
+		body#{&} {
+			background: $green-medium;
+		}
+	}
+
+	h1,
+	h3,
+	h4,
+	p,
+	li,
+	a {
+		color: $green-dark;
+	}
+
+	main {
+		background: $green-light;
+	}
+
+	section {
+		background: $green-extra-light;
+	}
+
+	.svg {
+		filter: invert(34%) sepia(2%) saturate(2652%) hue-rotate(164deg) brightness(93%) contrast(84%);
+	}
+
+	.job-title>p{
+		background: $green-dark;
+		color: $neutral-light;
+	}
+}
+
 html,
 body {
 	width: 100%;
+	min-height: 100%;
 	margin: 0;
+	line-height: 1.6;
+	transition: background-color $transition-time ease-in-out;
 }
 
 body {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	padding: 10rem 0;
+	font-family: $body-font-family;
+	font-weight: 300;
 }
 
-.white-svg {
-	filter: invert(100%);
+main {
+	width: 100%;
+	max-width: $max-page-width;
+	border-radius: $border-radius;
+	transition: $transition-time ease-in-out;
+	box-sizing: border-box;
+
+	display: flex;
+	gap: $gap-m;
+	padding: $gap-m;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+section {
+	border-radius: $border-radius;
+	transition: $transition-time ease-in-out;
+}
+
+.svg {
+	transition: $transition-time ease-in-out;
+}
+
+section,
+header {
+	padding: $gap-l;
+	box-sizing: border-box;
 }
 
 ul {
@@ -21,25 +127,87 @@ ul {
 	padding-left: 0;
 }
 
+.extras {
+	div {
+		margin: 0;
+	}
+}
+
 .img-title,
 .img-li {
 	display: flex;
 	align-items: center;
 	gap: $gap-s;
+
+	img {
+		max-height: 100%;
+		max-width: 100%;
+	}
 }
 
 .img-title {
-	img {
+	span {
 		width: $icon-width-l;
 	}
 }
 
 .img-li {
-	img {
+	span {
 		width: $icon-width-s;
+		display: flex;
+		align-items: center;
 	}
 
 	margin: $gap-m 0;
+}
+
+.qualifications {
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: $gap-s;
+	}
+}
+
+.projects {
+	img {
+		width: $icon-width-s;
+	}
+}
+
+.job-title {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+
+	& > div {
+		display: flex;
+		align-items: center;
+		gap: $gap-s;
+
+		h4,
+		p {
+			margin: 0;
+		}
+	}
+
+	p {
+		margin: 0;
+	}
+
+	& > p {
+		padding: 0 $gap-s;
+	}
+}
+
+.job-title,
+.img-title,
+.img-li {
+	margin: 0 0 $gap-s;
+
+	h4 {
+		margin: 0;
+	}
 }
 
 h1,
@@ -48,4 +216,135 @@ h3,
 h4,
 h5 {
 	text-transform: uppercase;
+	margin: 0;
+	font-family: $heading-font-family;
+	font-weight: normal;
+}
+
+h3 {
+	margin: 0 0 $gap-m;
+}
+
+h4 {
+	margin: 0 0 $gap-s;
+}
+
+p {
+	margin-top: 0;
+}
+
+b {
+	font-weight: 500;
+}
+
+.row-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: $gap-m;
+
+	section {
+		width: 100%;
+	}
+}
+
+.button-main {
+	background: $green-bright;
+	color: $neutral-light;
+	border: none;
+	border-radius: $border-radius;
+	font-family: $heading-font-family;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: normal;
+	box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+	text-decoration: none;
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: $gap-m 0;
+	gap: $gap-s;
+
+	img {
+		width: 2rem;
+		filter: invert(100%);
+	}
+}
+
+.light {
+	.button-main {
+		background: $green-dark;
+		box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+		color: $neutral-light;
+	}
+}
+
+.button-main:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.extras {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media only screen and (max-width: $page-break) {
+	body {
+		padding: 0;
+	}
+	main {
+		border-radius: 0;
+	}
+}
+
+@media only screen and (min-width: $tablet-break) and (max-width: 49rem) {
+	.row-wrapper {
+		flex-direction: row;
+	}
+}
+
+@media only screen and (max-width: $mobile-break) {
+	main {
+		border-radius: 0;
+		padding: 0;
+		gap: 0;
+	}
+
+	header,
+	section {
+		padding: $gap-m;
+		border-radius: 0;
+	}
+
+	.contact,
+	.experience,
+	.professional-skills,
+	.publications {
+		background: transparent;
+	}
+
+	.button-main {
+		max-width: 80%;
+		margin: $gap-m auto $gap-l auto;
+	}
+
+	.job-title {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.summary {
+		p {
+			margin: 0;
+		}
+	}
+
+	.img-title {
+		span {
+			width: $icon-width-s;
+		}
+	}
 }

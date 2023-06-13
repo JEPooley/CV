@@ -1,15 +1,40 @@
 /* Variables and mixins declared here will be available in all other SCSS files */
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&family=Roboto:wght@300;500&display=swap');
 
 // Colours
-$base-color: #c6538c;
+$green-extra-dark: #323c43ff;
+$green-dark: #51595fff;
+$green-medium: #c2c8cbff;
+$green-light: #dee1e3ff;
+$green-extra-light: #f2f3f4ff;
+$green-bright: #74c0a3ff;
 
+$neutral-light: #ffffff;
+
+// Fonts
+$heading-font-family: 'Oswald', sans-serif;
+$body-font-family: 'Roboto', sans-serif;
 
 // Gaps
+$gap-l: 2rem;
 $gap-m: 1rem;
 $gap-s: 0.6rem;
 
+// Border Radius
+$border-radius: 0.6rem;
 
 // Icons
+$icon-width-xs: 0.8rem;
 $icon-width-s: 1.6rem;
 $icon-width-l: 2rem;
+
+// Page size
+$max-page-width: 55rem;
+
+// Breaks
+$mobile-break: 30rem;
+$tablet-break: 40rem;
+$page-break: $max-page-width;
+
+// Timing
+$transition-time: 400ms;

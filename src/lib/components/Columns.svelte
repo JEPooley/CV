@@ -1,16 +1,25 @@
 <script lang="ts">
+
+	export let leftWidth: number = 40;
+	export let rightWidth: number = 60;
+
 	let width: number;
 
-	const mobileBreak = 800;
+	function convertRemToPixels(rem: number) {
+		return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+	}
+
+	const breakPoint = 50; //rem
+    const breakPointPx = convertRemToPixels(breakPoint)
 </script>
 
 <main>
-	{#if width > mobileBreak}
-		<div class="left">
+	{#if width > breakPointPx}
+		<div class="left" style="width: {leftWidth}%">
 			<slot name="left" />
 		</div>
 
-		<div class="right">
+		<div class="right" style="width: {rightWidth}%">
 			<slot name="right" />
 		</div>
 	{:else}
@@ -24,25 +33,10 @@
 <svelte:window bind:innerWidth={width} />
 
 <style lang="scss">
-	main {
-		width: 100%;
-		max-width: 80rem;
-		background: $base-color;
-
-		display: flex;
-	}
-
 	div {
 		display: flex;
 		flex-direction: column;
-	}
-
-	.left {
-		width: 40%;
-	}
-
-	.right {
-		width: 60%;
+		gap: $gap-m;
 	}
 
 	.center {
