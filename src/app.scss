@@ -30,8 +30,8 @@ section {
 	filter: invert(100%);
 }
 
-.job-title>p{
-	background: $neutral-light;
+.job-title > p {
+	background: $green-medium;
 	color: $green-extra-dark;
 }
 
@@ -65,9 +65,9 @@ section {
 		filter: invert(34%) sepia(2%) saturate(2652%) hue-rotate(164deg) brightness(93%) contrast(84%);
 	}
 
-	.job-title>p{
+	.job-title > p {
 		background: $green-dark;
-		color: $neutral-light;
+		color: $green-extra-light;
 	}
 }
 
@@ -130,6 +130,10 @@ ul {
 .extras {
 	div {
 		margin: 0;
+	}
+
+	.img-title span {
+		width: $icon-width-s;
 	}
 }
 
@@ -196,7 +200,8 @@ ul {
 	}
 
 	& > p {
-		padding: 0 $gap-s;
+		padding: 0 $gap-m;
+		border-radius: 10rem;
 	}
 }
 

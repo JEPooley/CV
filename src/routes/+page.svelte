@@ -203,7 +203,7 @@
 							</div>
 						</div>
 
-						<p><b>Ordnance Survey</b></p>
+						<p>Ordnance Survey</p>
 					</div>
 					<p>
 						As a prototyping specialist within Ordnance Survey's Innovation Team, I have worked on
@@ -228,7 +228,7 @@
 								<p>Sep 2015 – Dec 2019</p>
 							</div>
 						</div>
-						<p><b>Uni. of Southampton</b></p>
+						<p>Uni. of Southampton</p>
 					</div>
 					<p>
 						During my post-graduate research at the University of Southampton, I focused on the
