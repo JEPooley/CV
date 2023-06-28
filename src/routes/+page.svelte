@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Columns from '../lib/components/Columns.svelte';
 	import Heading from '../lib/components/Heading.svelte';
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -18,26 +19,29 @@
 			<section style="order: 2" class="contact">
 				<ul>
 					<li class="img-li">
-						<span><img class="svg" src="icons/location-dot-solid.svg" alt="Location Pin" /></span
+						<span
+							><img
+								class="svg"
+								src="{base}/icons/location-dot-solid.svg"
+								alt="Location Pin"
+							/></span
 						>Winchester, UK
 					</li>
 					<li class="img-li">
-						<span><img class="svg" src="icons/github.svg" alt="GitHub Logo" /></span><a
+						<span><img class="svg" src="{base}/icons/github.svg" alt="GitHub Logo" /></span><a
 							target="_blank"
 							href="https://github.com/JEPooley">github.com/JEPooley</a
 						>
 					</li>
 					<li class="img-li">
-						<span><img class="svg" src="icons/linkedin.svg" alt="LinkedIn Logo" /></span><a
+						<span><img class="svg" src="{base}/icons/linkedin.svg" alt="LinkedIn Logo" /></span><a
 							target="_blank"
 							href="https://linkedin.com/in/josh-pooley">linkedin.com/in/josh-pooley</a
 						>
 					</li>
 					<li class="img-li">
-						<span><img class="svg" src="icons/codepen-logo.svg" alt="Codepen Logo" /></span><a
-							target="_blank"
-							href="https://codepen.io/jepooley">codepen.io/jepooley</a
-						>
+						<span><img class="svg" src="{base}/icons/codepen-logo.svg" alt="Codepen Logo" /></span
+						><a target="_blank" href="https://codepen.io/jepooley">codepen.io/jepooley</a>
 					</li>
 				</ul>
 			</section>
@@ -61,7 +65,7 @@
 				<li>
 					<h4>
 						osdatahub <a target="_blank" href="https://github.com/OrdnanceSurvey/osdatahub"
-							><img class="svg" src="icons/link-solid.svg" alt="Link Icon" /></a
+							><img class="svg" src="{base}/icons/link-solid.svg" alt="Link Icon" /></a
 						>
 					</h4>
 					<p>
@@ -74,7 +78,7 @@
 						Data Hub Explorer <a
 							target="_blank"
 							href="https://labs.os.uk/prototyping/data-hub-explorer/"
-							><img class="svg" src="icons/link-solid.svg" alt="Link Icon" /></a
+							><img class="svg" src="{base}/icons/link-solid.svg" alt="Link Icon" /></a
 						>
 					</h4>
 					<p>
@@ -86,7 +90,7 @@
 				<li>
 					<h4>
 						mobtimer.dev <a target="_blank" href="https://mobtimer.dev/"
-							><img class="svg" src="icons/link-solid.svg" alt="Link Icon" /></a
+							><img class="svg" src="{base}/icons/link-solid.svg" alt="Link Icon" /></a
 						>
 					</h4>
 					<p>
@@ -129,14 +133,16 @@
 			<ul>
 				<li>
 					<div class="img-title">
-						<span><img class="svg" src="icons/kitchen-set-solid.svg" alt="Kitchen Icon" /></span>
+						<span
+							><img class="svg" src="{base}/icons/kitchen-set-solid.svg" alt="Kitchen Icon" /></span
+						>
 						<h4>Cooking</h4>
 					</div>
 					<p>Passionate home cook and keen advocate of pineapple on pizza.</p>
 				</li>
 				<li>
 					<div class="img-title">
-						<span><img class="svg" src="icons/guitar-solid.svg" alt="Guitar Icon" /></span>
+						<span><img class="svg" src="{base}/icons/guitar-solid.svg" alt="Guitar Icon" /></span>
 						<h4>Music</h4>
 					</div>
 					<p>
@@ -145,7 +151,13 @@
 				</li>
 				<li>
 					<div class="img-title">
-						<span><img class="svg" src="icons/shoe-prints-solid.svg" alt="Footprints Icon" /></span>
+						<span
+							><img
+								class="svg"
+								src="{base}/icons/shoe-prints-solid.svg"
+								alt="Footprints Icon"
+							/></span
+						>
 						<h4>Walking</h4>
 					</div>
 					<p>
@@ -159,18 +171,18 @@
 		<div class="row-wrapper" style="order: 10">
 			<section style="order: 10" class="extras">
 				<div class="img-title">
-					<span><img class="svg" src="icons/lock-solid.svg" alt="Lock Icon" /></span>
+					<span><img class="svg" src="{base}/icons/lock-solid.svg" alt="Lock Icon" /></span>
 					<h4>Security Clearence (SC level)</h4>
 				</div>
 			</section>
 
 			<a
-				href="src/downloads/Josh-Pooley-CV-Print.pdf"
+				href="{base}/downloads/Josh-Pooley-CV-Print.pdf"
 				class="button-main"
 				style="order: 11"
 				download="Josh-Pooley-CV-Print.pdf"
 			>
-				Download (Print Version)<img src="icons/download-solid.svg" alt="Download Icon" />
+				Download (Print Version)<img src="{base}/icons/download-solid.svg" alt="Download Icon" />
 			</a>
 		</div>
 	</svelte:fragment>
@@ -193,7 +205,7 @@
 							<span
 								><img
 									class="svg"
-									src="icons/ordnance-survey-logo.svg"
+									src="{base}/icons/ordnance-survey-logo.svg"
 									alt="Ordnance Survey Logo"
 								/></span
 							>
@@ -219,7 +231,7 @@
 							<span
 								><img
 									class="svg"
-									src="icons/soton-logo.svg"
+									src="{base}/icons/soton-logo.svg"
 									alt="University of Southampton Logo"
 								/></span
 							>
@@ -245,7 +257,7 @@
 			<ul>
 				<li>
 					<div class="img-title">
-						<span><img src="icons/python-logo.png" alt="Python Logo" /></span>
+						<span><img src="{base}/icons/python-logo.png" alt="Python Logo" /></span>
 						<h4>Python Developer</h4>
 					</div>
 					<p>
@@ -258,7 +270,7 @@
 				</li>
 				<li>
 					<div class="img-title">
-						<span><img src="icons/svelte-logo.png" alt="Svelte Logo" /></span>
+						<span><img src="{base}/icons/svelte-logo.png" alt="Svelte Logo" /></span>
 						<h4>Frontend Developer</h4>
 					</div>
 					<p>
@@ -270,7 +282,7 @@
 				</li>
 				<li>
 					<div class="img-title">
-						<span><img src="icons/azure-logo.png" alt="MS Azure Logo" /></span>
+						<span><img src="{base}/icons/azure-logo.png" alt="MS Azure Logo" /></span>
 						<h4>Cloud Developer</h4>
 					</div>
 					<p>
@@ -284,7 +296,7 @@
 				</li>
 				<li>
 					<div class="img-title">
-						<span><img src="icons/git-logo.png" alt="Git Logo" /></span>
+						<span><img src="{base}/icons/git-logo.png" alt="Git Logo" /></span>
 						<h4>Software Engineer</h4>
 					</div>
 					<p>
@@ -295,7 +307,7 @@
 				</li>
 				<li>
 					<div class="img-title">
-						<span><img src="icons/azureml-logo.png" alt="AzureML Logo" /></span>
+						<span><img src="{base}/icons/azureml-logo.png" alt="AzureML Logo" /></span>
 						<h4>Data Scientist</h4>
 					</div>
 					<p>
@@ -306,7 +318,7 @@
 				</li>
 				<li>
 					<div class="img-title">
-						<span><img src="icons/geopandas-logo.png" alt="Geopandas Logo" /></span>
+						<span><img src="{base}/icons/geopandas-logo.png" alt="Geopandas Logo" /></span>
 						<h4>Geospatial Specialist</h4>
 					</div>
 					<p>
