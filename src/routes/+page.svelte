@@ -172,7 +172,7 @@
 			<section style="order: 10" class="extras">
 				<div class="img-title">
 					<span><img class="svg" src="{base}/icons/lock-solid.svg" alt="Lock Icon" /></span>
-					<h4>Security Clearence (SC level)</h4>
+					<h4>Security Clearance (SC level)</h4>
 				</div>
 			</section>
 
